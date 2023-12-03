@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+li {
+  list-style-type: none;
+}
+section {
+  min-height: 500px;
+}
+a {
+  text-decoration: none;
+}
+input {
+  outline: 0;
+}

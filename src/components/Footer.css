@@ -1,0 +1,59 @@
+
+/*Configurção geral da pagina*/
+.container-footer {
+    padding: 0.8rem;
+    box-shadow: 1px 1px 10px silver;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-color: whitesmoke;
+}
+.footer-head, 
+.footer-main {
+    padding: 1rem;
+}
+
+/*footer head*/
+.footer-head {
+    margin-bottom: 2rem;
+}
+.footer-head nav ul li a {
+    color: black;
+}
+.footer-head nav, 
+.rede-social nav {
+    width: 50%;
+}
+.footer-head nav {
+    float: right;
+}
+.footer-head nav ul,
+.rede-social nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-head nav ul li a:hover,
+.rede-social nav ul li a:hover {
+    transition: 0.5s;
+    color: orange;
+}
+
+/*rede social*/
+.rede-social {
+    margin-bottom: 2rem;
+}
+.rede-social nav {
+    float: left;
+}
+.rede-social nav ul li a {
+    font-size: 20px;
+    color: black;
+}
+/*footer main*/
+.footer-main {
+    width: 100%;
+    text-align: center;
+}
+.footer-main p {
+    font-size: 18px;
+}

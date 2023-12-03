@@ -1,0 +1,48 @@
+.container-contact {
+    margin: 2rem auto;
+    color: white;
+}
+.container-contact h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.container-contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.container-contact label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: start;
+}
+.container-contact input[type="text"],
+input[type="email"],
+textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 100%;
+}
+.container-contact button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container-contact .success-message {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+@media(max-width:768px){
+    .container-contact form {
+        width: 90%;
+    }
+}
