@@ -1,4 +1,23 @@
 .container-imagens {
     color: white;
     padding-top: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container-imagens img {
+    width: 45%;
+    margin: 0.5rem;
+    box-shadow: 1px 1px 5px white;
+}
+@media(max-width:768px) {
+    .container-imagens {
+        width: 100%;
+    }
+    .container-imagens img {
+        width: 90%;
+    }
 }

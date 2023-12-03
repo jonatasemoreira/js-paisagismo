@@ -1,8 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import './NavBar.css';
 import { Link, useLocation } from 'react-router-dom';
-import { IoMdHome, IoIosCall, IoMdPerson, IoMdImages } from 'react-icons/io';
+import { IoMdHome, IoIosCall, IoMdPerson, IoMdImages, IoMdMenu, IoMdClose } from 'react-icons/io';
 import logoLuciano from '../assets/img/Logo-lm.png';
 import logo_header from '../assets/img/logo.png';
 
@@ -41,7 +40,6 @@ const NavBar = () => {
   const location = useLocation();
   const [activeNavItem, setActiveNavItem] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isMenuIconClose, setIsMenuIconClose] = useState(false);
 
   useEffect(() => {
     setActiveNavItem(location.pathname);
@@ -49,12 +47,10 @@ const NavBar = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-    setIsMenuIconClose(!isMenuIconClose);
   };
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
-    setIsMenuIconClose(false);
   };
 
   return (
@@ -103,10 +99,10 @@ const NavBar = () => {
       </div>
       <div className="botaoMobile">
         <button onClick={toggleMobileMenu}>
-          {isMenuIconClose ? (
-            <IoMdHome className="icon-mobile" />
+          {isMobileMenuOpen ? (
+            <IoMdClose className="icon-mobile" />
           ) : (
-            <IoMdHome className="icon-mobile" />
+            <IoMdMenu className="icon-mobile" />
           )}
         </button>
       </div>

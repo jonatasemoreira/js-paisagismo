@@ -59,7 +59,9 @@ a {
   background-color: black;
   transition: 0.5s;
 }
-
+.slider img {
+  max-width: 550px;
+}
 @media(max-width:768px) {
   .home-right img {
     width: 90%;
